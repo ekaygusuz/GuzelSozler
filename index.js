@@ -95,7 +95,7 @@ app.get("/admin", function(req, res){
     /*GuzelSoz.find({}, function(err, gelenGuzelSozler){
       res.render("admin", {guzelsozler : gelenGuzelSozler});
     })*/
-    var link = "https://guzelsoz.herokuapp.com/api/guzelsozler";
+    var link = "https://guzelsoz2.herokuapp.com/api/guzelsozler";
     https.get(link , function(response){
       response.on("data", function(gelenGuzelSozler){
         // gelenGuzelSozler -> byte türünde gelmişti.
@@ -107,7 +107,7 @@ app.get("/admin", function(req, res){
 //https://guzelsozler.herokuapp.com/api/guzelsoz/600c683c986f50001534a062
 app.post("/kayit-sil", function(req, res){
     var id = req.body._id;
-    var link = "https://guzelsoz.herokuapp.com/"+id;
+    var link = "https://guzelsoz2.herokuapp.com/"+id;
     var secenekler = {
       method : 'DELETE'
     };
@@ -120,7 +120,7 @@ app.post("/kayit-sil", function(req, res){
 });
 let port = process.env.PORT;
 if(port == "" || port == null){
-  port = 5000;
+  port = 8000;
 }
 app.listen(port, function(){
   console.log("port numarasi : " + port);
