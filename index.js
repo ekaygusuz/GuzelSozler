@@ -107,7 +107,7 @@ app.get("/admin", function(req, res){
 //https://guzelsozler.herokuapp.com/api/guzelsoz/600c683c986f50001534a062
 app.post("/kayit-sil", function(req, res){
     var id = req.body._id;
-    var link = "https://guzelsozler.herokuapp.com/api/guzelsoz/"+id;
+    var link = "https://guzelsoz.herokuapp.com/"+id;
     var secenekler = {
       method : 'DELETE'
     };
