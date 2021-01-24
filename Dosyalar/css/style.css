@@ -1,0 +1,92 @@
+.navbar {
+  padding: 0 1rem;
+}
+
+.arkaplan {
+  background-color: #073b4c;
+}
+
+.topempty {
+  padding: 2% 5%;
+}
+
+.nav-radius {
+  border-radius: 1rem;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: ubuntu;
+}
+
+.top-bottom {
+  padding: 45px 0;
+}
+
+.motto {
+  font-family: ubuntu;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 10%;
+}
+
+.fas {
+  color: #FFD166;
+  margin-bottom: 5%;
+}
+/* yorum bolumu*/
+.comments{
+  padding: 3% 10%
+}
+.comments p{
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+.comments img{
+  width: 8%;
+}
+.prices .row .col-lg-4 div{
+  margin-top: 10px;
+}
+
+
+/*ekran min 768px veya buyukse kodlar calissin */
+@media (min-width: 768px) {
+  .title-pic {
+    width: 50%;
+    transform: rotate(25deg);
+  }
+}
+
+/*ekran max 767px veya kucukse kodlar calissin */
+@media (max-width: 767px) {
+  .title-pic {
+    margin-top: 20px;
+    width: 50%;
+    transform: rotate(0deg);
+  }
+
+  .downloads {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width:992px) {
+  .l-r-fluidpadding {
+    padding: 3% 15%;
+  }
+}
+
+@media (max-width:991px) {
+  .l-r-fluidpadding {
+    padding: 3% 3%;
+  }
+}
+
+@media (min-width:1200px) {
+  .l-r-fluidpadding: {
+    padding: 3% 15%
+  }
+}

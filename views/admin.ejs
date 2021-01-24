@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+      <% for(var i = 0 ; i < sozler.length ; i++){ %>
+        <form action="/kayit-sil" method="post">
+          <div class="alert alert-primary m-2">
+            <div class="row">
+              <div class="col-11">
+                <%= sozler[i].icerik %>
+              </div>
+              <div class="col-1">
+                <button name="_id" value="<%= sozler[i]._id %>" type="submit" class="btn btn-danger">Sil</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      <% } %>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Güzel Sözler</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body class="bg-light">
+    <div class="container pl-5 pr-5 ">
+      <h3 class="text-center p-5">Güzel Sözler.com</h3>
+      <% for(var i = 0 ; i < sozler.length ; i++){ %>
+        <div class="alert
+                          <% if(i % 8 == 0){ %>
+                            alert-primary
+                          <% } else if(i % 7 == 0) { %>
+                            alert-secondary
+                          <% } else if(i % 6 == 0) { %>
+                            alert-success
+                          <% } else if(i % 5 == 0) { %>
+                            alert-danger
+                          <% } else if(i % 4 == 0) { %>
+                            alert-warning
+                          <% } else if(i % 3 == 0) { %>
+                            alert-info
+                          <% } else if(i % 2 == 0) { %>
+                            alert-light
+                          <% } else { %>
+                            alert-dark
+                          <% } %>
+                          " role="alert">
+          <%= sozler[i].icerik %> - <%= sozler[i].kategori %>
+        </div>
+      <% } %>
+    </div>
+  </body>
+</html>
